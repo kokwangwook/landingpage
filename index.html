@@ -3,91 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코리아NEW - 신뢰할 수 있는 뉴스, 빠른 정보 전달</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>코리아NEW</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 1rem;
+        }
+        #main-news {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #main-news h2 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-    <header class="animate__animated animate__fadeIn">
+    <header>
         <h1>코리아NEW</h1>
-        <p>신뢰할 수 있는 뉴스, 빠른 정보 전달</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#main-news">주요 뉴스</a></li>
-            <li><a href="#categories">카테고리</a></li>
-            <li><a href="#subscribe">구독</a></li>
-        </ul>
-    </nav>
+    <section id="main-news">
+        <h2 style="font-size: 2em;">홈페이지 리뉴얼 중입니다</h2>
+    </section>
 
-    <main>
-        <section id="main-news" class="animate__animated animate__fadeInUp">
-            <h2>오늘의 주요 뉴스</h2>
-            <div class="news-container">
-                <article class="news-item">
-                    <h3>[속보] 광주시, 새로운 도시 개발 계획 발표</h3>
-                    <p>광주시가 2030년까지의 새로운 도시 개발 계획을 발표했습니다. 이 계획에는...</p>
-                </article>
-                <article class="news-item">
-                    <h3>국내 IT 기업, 인공지능 기술 혁신으로 세계 시장 선도</h3>
-                    <p>국내 주요 IT 기업들이 인공지능 기술 혁신을 통해 세계 시장을 선도하고 있습니다...</p>
-                </article>
-            </div>
-        </section>
+    <footer>
+        <p>연락처: info@koreanew.com | 전화: 062-263-2658</p>
+        <p>주소: 광주광역시 동구 독립로 338, 501호</p>
+        <p>발행인: 고광욱 | 편집인: 고광욱</p>
+        <p>&copy; 2024 코리아NEW. All rights reserved.</p>
+    </footer>
 
-        <section id="categories" class="animate__animated animate__fadeInUp">
-            <h2>뉴스 카테고리</h2>
-            <div class="category-container">
-                <div class="category">
-                    <h3>정치</h3>
-                    <ul>
-                        <li>국회, 새로운 법안 통과</li>
-                        <li>여야, 내년 예산안 협상 시작</li>
-                    </ul>
-                </div>
-                <div class="category">
-                    <h3>경제</h3>
-                    <ul>
-                        <li>한국은행, 기준금리 동결</li>
-                        <li>주요 기업 실적 전망 밝아</li>
-                    </ul>
-                </div>
-                <div class="category">
-                    <h3>사회</h3>
-                    <ul>
-                        <li>교육부, 새 입시 정책 발표</li>
-                        <li>환경보호 캠페인 확산</li>
-                    </ul>
-                </div>
-                <div class="category">
-                    <h3>문화/스포츠</h3>
-                    <ul>
-                        <li>한국 영화, 해외 영화제 수상</li>
-                        <li>프로야구 시즌 개막 임박</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="subscribe" class="animate__animated animate__fadeInUp">
-            <h2>뉴스레터 구독</h2>
-            <form>
-                <input type="email" placeholder="이메일 주소를 입력하세요" required>
-                <button type="submit">구독하기</button>
-            </form>
-        </section>
-    </main>
-
-<footer>
-    <p>연락처: info@koreanew.com | 전화: 062-263-2658</p>
-    <p>주소: 광주광역시 동구 독립로 338, 501호</p>
-    <p>발행인: 고광욱 | 편집인: 고광욱</p>
-    <p>&copy; 2024 코리아NEW. All rights reserved.</p>
-</footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.js"></script>
-    <script>new WOW().init();</script>
 </body>
 </html>
