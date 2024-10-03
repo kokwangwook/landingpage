@@ -1,94 +1,88 @@
-/* 전체 페이지 스타일 */
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코리아NEW - 신뢰할 수 있는 뉴스, 빠른 정보 전달</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>코리아NEW</h1>
+        <p>신뢰할 수 있는 뉴스, 빠른 정보 전달</p>
+    </header>
 
-/* 헤더 스타일 */
-header {
-    background-color: #1a237e;
-    color: white;
-    padding: 60px 0;
-}
+    <nav>
+        <ul>
+            <li><a href="#main-news">주요 뉴스</a></li>
+            <li><a href="#categories">카테고리</a></li>
+            <li><a href="#subscribe">구독</a></li>
+        </ul>
+    </nav>
 
-header h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-}
+    <main>
+        <section id="main-news">
+            <h2>오늘의 주요 뉴스</h2>
+            <div class="news-container">
+                <article class="news-item">
+                    <h3>[속보] 광주시, 새로운 도시 개발 계획 발표</h3>
+                    <p>광주시가 2030년까지의 새로운 도시 개발 계획을 발표했습니다. 이 계획에는...</p>
+                </article>
+                <article class="news-item">
+                    <h3>국내 IT 기업, 인공지능 기술 혁신으로 세계 시장 선도</h3>
+                    <p>국내 주요 IT 기업들이 인공지능 기술 혁신을 통해 세계 시장을 선도하고 있습니다...</p>
+                </article>
+            </div>
+        </section>
 
-header p {
-    font-size: 1.2rem;
-}
+        <section id="categories">
+            <h2>뉴스 카테고리</h2>
+            <div class="category-container">
+                <div class="category">
+                    <h3>정치</h3>
+                    <ul>
+                        <li>국회, 새로운 법안 통과</li>
+                        <li>여야, 내년 예산안 협상 시작</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>경제</h3>
+                    <ul>
+                        <li>한국은행, 기준금리 동결</li>
+                        <li>주요 기업 실적 전망 밝아</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>사회</h3>
+                    <ul>
+                        <li>교육부, 새 입시 정책 발표</li>
+                        <li>환경보호 캠페인 확산</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>문화/스포츠</h3>
+                    <ul>
+                        <li>한국 영화, 해외 영화제 수상</li>
+                        <li>프로야구 시즌 개막 임박</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-/* 네비게이션 바 스타일 */
-.navbar {
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
-}
+        <section id="subscribe">
+            <h2>뉴스레터 구독</h2>
+            <form>
+                <input type="email" placeholder="이메일 주소를 입력하세요" required>
+                <button type="submit">구독하기</button>
+            </form>
+        </section>
+    </main>
 
-.navbar-brand {
-    font-weight: 700;
-    color: #1a237e !important;
-}
-
-/* 뉴스 아이템 스타일 */
-.news-item {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: none;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.news-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.news-item .card-title {
-    color: #1a237e;
-    font-weight: 600;
-}
-
-/* 카테고리 섹션 스타일 */
-#categories h4 {
-    color: #1a237e;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-/* 구독 섹션 스타일 */
-#subscribe {
-    background-color: #e8eaf6;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-#subscribe h3 {
-    color: #1a237e;
-    font-weight: 600;
-}
-
-#subscribe .btn-primary {
-    background-color: #1a237e;
-    border-color: #1a237e;
-}
-
-/* 푸터 스타일 */
-footer {
-    background-color: #1a237e;
-    color: white;
-    padding: 30px 0;
-}
-
-footer p {
-    margin-bottom: 5px;
-}
-
-/* 반응형 디자인을 위한 미디어 쿼리 */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-}
+    <footer>
+        <p>연락처: info@koreanew.com | 전화: 062-XXX-XXXX</p>
+        <p>주소: 광주광역시 [상세 주소]</p>
+        <p>&copy; 2024 코리아NEW. All rights reserved.</p>
+    </footer>
+</body>
+</html>
