@@ -3,135 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코리아NEW</title>
-    <style>
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f8f9fa;
-        }
-        header {
-            background-color: #3f51b5;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        nav {
-            background-color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        nav span {
-            color: #3f51b5;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        #main-content {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 5px;
-        }
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .news-item {
-            background-color: #fff;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            padding: 15px;
-            transition: all 0.3s ease;
-        }
-        .news-item:hover {
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .news-item h3 {
-            margin-top: 0;
-            color: #3f51b5;
-        }
-        .newsletter {
-            background-color: #e8eaf6;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
-            text-align: center;
-        }
-        .newsletter input[type="email"] {
-            padding: 10px;
-            width: 60%;
-            max-width: 300px;
-            border: 1px solid #3f51b5;
-            border-radius: 3px;
-        }
-        .newsletter button {
-            padding: 10px 20px;
-            background-color: #3f51b5;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-        footer {
-            background-color: #3f51b5;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 20px;
-        }
-        footer p {
-            margin: 5px 0;
-        }
-    </style>
+    <title>코리아NEW - 최신 뉴스와 분석</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>코리아NEW</h1>
+        <div class="header-top">
+            <h1>코리아NEW</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#politics">정치</a></li>
+                    <li><a href="#economy">경제</a></li>
+                    <li><a href="#society">사회</a></li>
+                    <li><a href="#culture">문화</a></li>
+                    <li><a href="#world">국제</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <form class="search-form">
+                <input type="search" placeholder="뉴스 검색...">
+                <button type="submit">검색</button>
+            </form>
+            <div class="user-actions">
+                <a href="#login">로그인</a>
+                <a href="#subscribe" class="btn-subscribe">구독하기</a>
+            </div>
+        </div>
     </header>
 
-    <nav>
-        <span>홈페이지 리뉴얼 중입니다</span>
-    </nav>
+    <div class="renovation-banner">
+        <h2>홈페이지 리뉴얼 중입니다</h2>
+        <p>더 나은 서비스로 곧 찾아뵙겠습니다. 현재 베타 서비스 중입니다.</p>
+    </div>
 
-    <section id="main-content">
-        <h2>주요 뉴스</h2>
-        <div class="news-grid">
-            <div class="news-item">
-                <h3>광주시, 2025년 세계수영선수권대회 유치 성공</h3>
-                <p>광주시가 2025년 세계수영선수권대회 유치에 성공했습니다. 이번 대회 유치로 광주는 국제 스포츠 도시로서의 위상을 한층 높이게 되었습니다.</p>
+    <main>
+        <section id="breaking-news">
+            <h2>주요 뉴스</h2>
+            <div class="news-grid">
+                <article class="news-item featured">
+                    <img src="https://via.placeholder.com/400x250" alt="광주 세계수영선수권대회">
+                    <h3><a href="article1.html">광주시, 2025년 세계수영선수권대회 유치 성공</a></h3>
+                    <p>광주시가 2025년 세계수영선수권대회 유치에 성공했습니다. 이번 대회 유치로 광주는 국제 스포츠 도시로서의 위상을 한층 높이게 되었습니다.</p>
+                    <a href="article1.html" class="read-more">자세히 보기</a>
+                </article>
+                <article class="news-item">
+                    <img src="https://via.placeholder.com/300x200" alt="전남 친환경 농산물">
+                    <h3><a href="article2.html">전남 친환경 농산물, 해외 시장서 인기몰이</a></h3>
+                    <p>전라남도의 친환경 농산물이 해외 시장에서 큰 인기를 얻고 있습니다. 특히 미국과 유럽에서 전남산 유기농 제품에 대한 수요가 급증하고 있습니다.</p>
+                    <a href="article2.html" class="read-more">자세히 보기</a>
+                </article>
+                <article class="news-item">
+                    <img src="https://via.placeholder.com/300x200" alt="AI 기술 혁신">
+                    <h3><a href="article3.html">한국 AI 기술, 글로벌 시장 선도</a></h3>
+                    <p>한국의 AI 기술이 글로벌 시장에서 주목받고 있습니다. 국내 주요 기업들의 혁신적인 AI 솔루션이 세계 각국에서 호평을 받으며 수출 증가로 이어지고 있습니다.</p>
+                    <a href="article3.html" class="read-more">자세히 보기</a>
+                </article>
             </div>
-            <div class="news-item">
-                <h3>전남 친환경 농산물, 해외 시장서 인기몰이</h3>
-                <p>전라남도의 친환경 농산물이 해외 시장에서 큰 인기를 얻고 있습니다. 특히 미국과 유럽에서 전남산 유기농 제품에 대한 수요가 급증하고 있습니다.</p>
-            </div>
-            <div class="news-item">
-                <h3>광주 인공지능 클러스터, 국내 AI 산업 선도</h3>
-                <p>광주 인공지능 클러스터가 국내 AI 산업을 선도하고 있습니다. 첨단 기술 기업들의 입주가 이어지며 지역 경제 활성화에 크게 기여하고 있습니다.</p>
-            </div>
-        </div>
-        
-        <div class="newsletter">
-            <h3>뉴스레터 구독</h3>
-            <p>최신 뉴스를 이메일로 받아보세요</p>
-            <input type="email" placeholder="이메일 주소">
-            <button>구독하기</button>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <section id="latest-news">
+            <h2>최신 뉴스</h2>
+            <ul>
+                <li><a href="latest1.html">코로나19 신규 확진자 500명대로 감소, 방역당국 "안심은 금물"</a></li>
+                <li><a href="latest2.html">정부, 신재생에너지 정책 발표... "2030년까지 30% 달성 목표"</a></li>
+                <li><a href="latest3.html">국내 벤처기업 투자 사상 최대치 기록, 작년 대비 20% 증가</a></li>
+                <li><a href="latest4.html">여름 휴가철 앞두고 국내 여행지 인기 급상승, 제주도 예약 폭주</a></li>
+                <li><a href="latest5.html">한국 영화 '오징어 게임', 에미상 14개 부문 후보에 올라</a></li>
+            </ul>
+        </section>
+
+        <aside>
+            <section id="popular">
+                <h2>인기 기사</h2>
+                <ol>
+                    <li><a href="popular1.html">10년 만에 찾아온 슈퍼문, 오늘 밤 관측 포인트는?</a></li>
+                    <li><a href="popular2.html">MZ세대 취향저격 '뉴트로' 열풍, 복고 상품 매출 증가</a></li>
+                    <li><a href="popular3.html">AI가 그린 그림 전시회 화제, "예술의 경계는 어디까지인가"</a></li>
+                </ol>
+            </section>
+
+            <section id="newsletter">
+                <h2>뉴스레터 구독</h2>
+                <p>매일 아침 8시, 주요 뉴스를 이메일로 받아보세요.</p>
+                <form>
+                    <input type="email" placeholder="이메일 주소" required>
+                    <button type="submit">구독하기</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+
+<footer>
+    <div class="footer-content">
+        <div class="company-info">
+            <h3>코리아NEW</h3>
+            <p>우리는 정확하고 공정한 뉴스를 제공하기 위해 최선을 다하고 있습니다.</p>
+        </div>
+        <div class="quick-links">
+            <h3>빠른 링크</h3>
+            <ul>
+                <li><a href="#about">회사 소개</a></li>
+                <li><a href="#terms">이용약관</a></li>
+                <li><a href="#privacy">개인정보처리방침</a></li>
+                <li><a href="#contact">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>소셜 미디어</h3>
+            <ul>
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+                <li><a href="#youtube">YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
         <p>연락처: info@koreanew.com | 전화: 062-263-2658</p>
         <p>주소: 광주광역시 동구 독립로 338, 501호</p>
         <p>발행인: 고광욱 | 편집인: 고광욱</p>
         <p>&copy; 2024 코리아NEW. All rights reserved.</p>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
