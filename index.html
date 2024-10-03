@@ -11,20 +11,33 @@
             margin: 0;
             padding: 0;
         }
-        header, footer {
+        header {
             background-color: #f4f4f4;
             text-align: center;
             padding: 1rem;
         }
-        #main-news {
+        nav {
+            background-color: #3f51b5;
+            padding: 10px;
+            text-align: center;
+        }
+        nav span {
+            color: white;
+            font-size: 1.2em;
+            padding: 0 10px;
+        }
+        #main-content {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        #main-news h2 {
+        footer {
+            background-color: #f4f4f4;
             text-align: center;
-            color: #333;
-            margin: 20px 0;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
         footer p {
             margin: 5px 0;
@@ -36,8 +49,12 @@
         <h1>코리아NEW</h1>
     </header>
 
-    <section id="main-news">
-        <h2 style="font-size: 2em;">홈페이지 리뉴얼 중입니다</h2>
+    <nav>
+        <span>홈페이지 리뉴얼 중입니다</span>
+    </nav>
+
+    <section id="main-content">
+        <!-- 메인 콘텐츠가 여기에 들어갑니다 -->
     </section>
 
     <footer>
@@ -46,6 +63,5 @@
         <p>발행인: 고광욱 | 편집인: 고광욱</p>
         <p>&copy; 2024 코리아NEW. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
