@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>코리아NEW - 신뢰할 수 있는 뉴스, 빠른 정보 전달</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="animate__animated animate__fadeIn">
         <h1>코리아NEW</h1>
         <p>신뢰할 수 있는 뉴스, 빠른 정보 전달</p>
     </header>
@@ -22,7 +23,7 @@
     </nav>
 
     <main>
-        <section id="main-news">
+        <section id="main-news" class="animate__animated animate__fadeInUp">
             <h2>오늘의 주요 뉴스</h2>
             <div class="news-container">
                 <article class="news-item">
@@ -36,7 +37,7 @@
             </div>
         </section>
 
-        <section id="categories">
+        <section id="categories" class="animate__animated animate__fadeInUp">
             <h2>뉴스 카테고리</h2>
             <div class="category-container">
                 <div class="category">
@@ -70,7 +71,7 @@
             </div>
         </section>
 
-        <section id="subscribe">
+        <section id="subscribe" class="animate__animated animate__fadeInUp">
             <h2>뉴스레터 구독</h2>
             <form>
                 <input type="email" placeholder="이메일 주소를 입력하세요" required>
@@ -80,9 +81,12 @@
     </main>
 
     <footer>
-        <p>연락처: info@koreanew.com | 전화: 062-XXX-XXXX</p>
-        <p>주소: 광주광역시 [상세 주소]</p>
+        <p>연락처: info@koreanew.com | 전화: 062-263-2658</p>
+        <p>주소: 광주광역시 동구 독립로 338, 501호</p>
         <p>&copy; 2024 코리아NEW. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>
