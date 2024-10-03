@@ -4,29 +4,53 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
     background-color: #1a237e;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #1a237e, #3f51b5);
+    opacity: 0.7;
+    z-index: -1;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 nav {
     background-color: #3949ab;
-    padding: 0.5rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -38,25 +62,37 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd54f;
 }
 
 main {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 .news-container, .category-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .news-item, .category {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover, .category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .news-item h3, .category h3 {
@@ -66,36 +102,46 @@ main {
 
 #subscribe {
     background-color: #e8eaf6;
-    padding: 2rem;
-    border-radius: 5px;
-    margin-top: 2rem;
+    padding: 3rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 #subscribe form {
     display: flex;
     justify-content: center;
+    margin-top: 1.5rem;
 }
 
 #subscribe input[type="email"] {
-    padding: 0.5rem;
+    padding: 0.8rem;
     width: 60%;
-    max-width: 300px;
+    max-width: 400px;
+    border: none;
+    border-radius: 4px 0 0 4px;
 }
 
 #subscribe button {
-    padding: 0.5rem 1rem;
-    background-color: #1a237e;
-    color: white;
+    padding: 0.8rem 1.5rem;
+    background-color: #ffd54f;
+    color: #333;
     border: none;
+    border-radius: 0 4px 4px 0;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#subscribe button:hover {
+    background-color: #ffca28;
 }
 
 footer {
     background-color: #1a237e;
     color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -108,10 +154,6 @@ footer {
         margin: 0.5rem 0;
     }
 
-    .news-container, .category-container {
-        grid-template-columns: 1fr;
-    }
-
     #subscribe form {
         flex-direction: column;
         align-items: center;
@@ -120,5 +162,15 @@ footer {
     #subscribe input[type="email"] {
         width: 100%;
         margin-bottom: 1rem;
+        border-radius: 4px;
     }
+
+    #subscribe button {
+        width: 100%;
+        border-radius: 4px;
+    }
+}
+
+.wow {
+    visibility: hidden;
 }
