@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>코리아NEW - 홈페이지 리뉴얼 중</title>
     <style>
+        /* 기존 스타일 유지 */
         body, html {
             margin: 0;
             padding: 0;
@@ -55,17 +56,18 @@
             background-color: #2563eb;
             transition: width 0.5s ease-out;
         }
-        .preview-button {
+        .button {
             display: inline-block;
             background-color: #2563eb;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
-            margin: 20px 0;
+            margin: 10px 5px;
             transition: background-color 0.3s;
+            cursor: pointer;
         }
-        .preview-button:hover {
+        .button:hover {
             background-color: #1d4ed8;
         }
         .info {
@@ -89,7 +91,8 @@
                 <div class="progress" id="progress"></div>
             </div>
             
-            <a href="https://newsgj.com/" target="_blank" class="preview-button">광주전남뉴스 미리보기</a>
+            <a href="https://newsgj.com/" target="_blank" class="button">광주전남뉴스 미리보기</a>
+            <button onclick="forceRefresh()" class="button">페이지 새로고침</button>
             
             <div class="info">
                 <p>info@koreanew.com</p>
@@ -118,6 +121,10 @@
         }
         
         document.addEventListener('DOMContentLoaded', updateProgress);
+
+        function forceRefresh() {
+            location.reload(true);
+        }
     </script>
 </body>
 </html>
