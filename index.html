@@ -26,16 +26,20 @@
             padding: 30px;
             max-width: 400px;
             width: 100%;
+            text-align: center;
         }
         h1 {
             color: #2563eb;
-            text-align: center;
             margin-bottom: 20px;
         }
-        p {
-            color: #4b5563;
-            text-align: center;
-            margin-bottom: 10px;
+        .open-date {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2563eb;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
         }
         .progress-bar {
             width: 100%;
@@ -51,20 +55,23 @@
             background-color: #2563eb;
             transition: width 0.5s ease-out;
         }
+        .preview-button {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .preview-button:hover {
+            background-color: #1d4ed8;
+        }
         .info {
-            margin-bottom: 20px;
-        }
-        .info div {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .info svg {
-            margin-right: 10px;
-            flex-shrink: 0;
+            margin: 20px 0;
         }
         .footer {
-            text-align: center;
             font-size: 0.875rem;
             color: #6b7280;
         }
@@ -76,33 +83,18 @@
             <h1>코리아NEW</h1>
             <p>홈페이지 리뉴얼 중입니다</p>
             <p>더 나은 서비스로 곧 찾아뵙겠습니다.</p>
-            <p>현재 베타 서비스 중입니다.</p>
+            <div class="open-date">11월 1일 오픈예정입니다.</div>
             
             <div class="progress-bar">
                 <div class="progress" id="progress"></div>
             </div>
             
+            <a href="https://newsgj.com/" target="_blank" class="preview-button">광주전남뉴스 미리보기</a>
+            
             <div class="info">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <span>info@koreanew.com</span>
-                </div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                    <span>062-263-2658</span>
-                </div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    <span>광주광역시 동구 독립로 338, 501호</span>
-                </div>
+                <p>info@koreanew.com</p>
+                <p>062-263-2658</p>
+                <p>광주광역시 동구 독립로 338, 501호</p>
             </div>
             
             <div class="footer">
