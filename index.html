@@ -3,130 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코리아NEW - 최신 뉴스와 분석</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>코리아NEW - 홈페이지 리뉴얼 중</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-color: #f3f4f6;
+        }
+        .container {
+            min-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .content {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #2563eb;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #4b5563;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            height: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .progress {
+            width: 0%;
+            height: 100%;
+            background-color: #2563eb;
+            transition: width 0.5s ease-out;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        .info div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .info svg {
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="header-top">
+    <div class="container">
+        <div class="content">
             <h1>코리아NEW</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">홈</a></li>
-                    <li><a href="#politics">정치</a></li>
-                    <li><a href="#economy">경제</a></li>
-                    <li><a href="#society">사회</a></li>
-                    <li><a href="#culture">문화</a></li>
-                    <li><a href="#world">국제</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-bottom">
-            <form class="search-form">
-                <input type="search" placeholder="뉴스 검색...">
-                <button type="submit">검색</button>
-            </form>
-            <div class="user-actions">
-                <a href="#login">로그인</a>
-                <a href="#subscribe" class="btn-subscribe">구독하기</a>
+            <p>홈페이지 리뉴얼 중입니다</p>
+            <p>더 나은 서비스로 곧 찾아뵙겠습니다.</p>
+            <p>현재 베타 서비스 중입니다.</p>
+            
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            
+            <div class="info">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>info@koreanew.com</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>062-263-2658</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>광주광역시 동구 독립로 338, 501호</span>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>발행인: 고광욱 | 편집인: 고광욱</p>
+                <p>© 2024 코리아NEW. All rights reserved.</p>
             </div>
         </div>
-    </header>
-
-    <div class="renovation-banner">
-        <h2>홈페이지 리뉴얼 중입니다</h2>
-        <p>더 나은 서비스로 곧 찾아뵙겠습니다. 현재 베타 서비스 중입니다.</p>
     </div>
 
-    <main>
-        <section id="breaking-news">
-            <h2>주요 뉴스</h2>
-            <div class="news-grid">
-                <article class="news-item featured">
-                    <img src="https://via.placeholder.com/400x250" alt="광주 세계수영선수권대회">
-                    <h3><a href="article1.html">광주시, 2025년 세계수영선수권대회 유치 성공</a></h3>
-                    <p>광주시가 2025년 세계수영선수권대회 유치에 성공했습니다. 이번 대회 유치로 광주는 국제 스포츠 도시로서의 위상을 한층 높이게 되었습니다.</p>
-                    <a href="article1.html" class="read-more">자세히 보기</a>
-                </article>
-                <article class="news-item">
-                    <img src="https://via.placeholder.com/300x200" alt="전남 친환경 농산물">
-                    <h3><a href="article2.html">전남 친환경 농산물, 해외 시장서 인기몰이</a></h3>
-                    <p>전라남도의 친환경 농산물이 해외 시장에서 큰 인기를 얻고 있습니다. 특히 미국과 유럽에서 전남산 유기농 제품에 대한 수요가 급증하고 있습니다.</p>
-                    <a href="article2.html" class="read-more">자세히 보기</a>
-                </article>
-                <article class="news-item">
-                    <img src="https://via.placeholder.com/300x200" alt="AI 기술 혁신">
-                    <h3><a href="article3.html">한국 AI 기술, 글로벌 시장 선도</a></h3>
-                    <p>한국의 AI 기술이 글로벌 시장에서 주목받고 있습니다. 국내 주요 기업들의 혁신적인 AI 솔루션이 세계 각국에서 호평을 받으며 수출 증가로 이어지고 있습니다.</p>
-                    <a href="article3.html" class="read-more">자세히 보기</a>
-                </article>
-            </div>
-        </section>
-
-        <section id="latest-news">
-            <h2>최신 뉴스</h2>
-            <ul>
-                <li><a href="latest1.html">코로나19 신규 확진자 500명대로 감소, 방역당국 "안심은 금물"</a></li>
-                <li><a href="latest2.html">정부, 신재생에너지 정책 발표... "2030년까지 30% 달성 목표"</a></li>
-                <li><a href="latest3.html">국내 벤처기업 투자 사상 최대치 기록, 작년 대비 20% 증가</a></li>
-                <li><a href="latest4.html">여름 휴가철 앞두고 국내 여행지 인기 급상승, 제주도 예약 폭주</a></li>
-                <li><a href="latest5.html">한국 영화 '오징어 게임', 에미상 14개 부문 후보에 올라</a></li>
-            </ul>
-        </section>
-
-        <aside>
-            <section id="popular">
-                <h2>인기 기사</h2>
-                <ol>
-                    <li><a href="popular1.html">10년 만에 찾아온 슈퍼문, 오늘 밤 관측 포인트는?</a></li>
-                    <li><a href="popular2.html">MZ세대 취향저격 '뉴트로' 열풍, 복고 상품 매출 증가</a></li>
-                    <li><a href="popular3.html">AI가 그린 그림 전시회 화제, "예술의 경계는 어디까지인가"</a></li>
-                </ol>
-            </section>
-
-            <section id="newsletter">
-                <h2>뉴스레터 구독</h2>
-                <p>매일 아침 8시, 주요 뉴스를 이메일로 받아보세요.</p>
-                <form>
-                    <input type="email" placeholder="이메일 주소" required>
-                    <button type="submit">구독하기</button>
-                </form>
-            </section>
-        </aside>
-    </main>
-
-<footer>
-    <div class="footer-content">
-        <div class="company-info">
-            <h3>코리아NEW</h3>
-            <p>우리는 정확하고 공정한 뉴스를 제공하기 위해 최선을 다하고 있습니다.</p>
-        </div>
-        <div class="quick-links">
-            <h3>빠른 링크</h3>
-            <ul>
-                <li><a href="#about">회사 소개</a></li>
-                <li><a href="#terms">이용약관</a></li>
-                <li><a href="#privacy">개인정보처리방침</a></li>
-                <li><a href="#contact">고객센터</a></li>
-            </ul>
-        </div>
-        <div class="social-media">
-            <h3>소셜 미디어</h3>
-            <ul>
-                <li><a href="#facebook">Facebook</a></li>
-                <li><a href="#twitter">Twitter</a></li>
-                <li><a href="#instagram">Instagram</a></li>
-                <li><a href="#youtube">YouTube</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>연락처: info@koreanew.com | 전화: 062-263-2658</p>
-        <p>주소: 광주광역시 동구 독립로 338, 501호</p>
-        <p>발행인: 고광욱 | 편집인: 고광욱</p>
-        <p>&copy; 2024 코리아NEW. All rights reserved.</p>
-    </div>
-</footer>
+    <script>
+        function updateProgress() {
+            let progress = 0;
+            const progressBar = document.getElementById('progress');
+            const interval = setInterval(() => {
+                progress += 1;
+                progressBar.style.width = progress + '%';
+                if (progress >= 100) {
+                    clearInterval(interval);
+                }
+            }, 30);
+        }
+        
+        document.addEventListener('DOMContentLoaded', updateProgress);
+    </script>
 </body>
 </html>
